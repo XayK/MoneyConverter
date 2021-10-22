@@ -9,13 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="735" Width="1136">
 
     <Grid Margin="0,0,10,10">
-        <Button Content="Перевод" Margin="271,537,0,0" VerticalAlignment="Top" Click="Button_Click" Height="62" Width="175" FontSize="32"/>
-        <TextBox Name="TextbLeft" HorizontalAlignment="Left" Margin="173,390,0,0" Text="0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="196" FontSize="42"/>
-        <TextBox Name="TextbRight" HorizontalAlignment="Left" Margin="671,407,0,0" Text="0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="174" FontSize="42" IsReadOnly="True"/>
+        <Button Content="Перевод" Margin="194,551,0,0" VerticalAlignment="Top" Click="Button_Click" Height="62" Width="175" FontSize="32"/>
+        <TextBox Name="TextbLeft" HorizontalAlignment="Left" Margin="173,390,0,0" Text="0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="196" FontSize="42" TextChanged="TextbLeft_TextChanged"/>
+        <TextBox Name="TextbRight" HorizontalAlignment="Left" Margin="671,390,0,0" Text="0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="174" FontSize="42" IsReadOnly="True"/>
         <ComboBox Name="Valute1" Margin="173,182,0,0" Width="196" Height="54" SelectionChanged="Valute1_SelectionChanged" FontSize="28"/>
         <ComboBox Name="Valute2" Margin="671,182,0,0" Width="174" Height="54" SelectionChanged="Valute2_SelectionChanged" FontSize="28"/>
-        <TextBlock HorizontalAlignment="Left" Margin="510,284,0,0" Text="--&gt;" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Left" Margin="510,185,0,0" Text="&lt;--&gt;" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" PointerPressed="TextBlock_PointerPressed"/>
+        <TextBlock HorizontalAlignment="Left" Margin="496,398,0,0" Text="--&gt;" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="486,185,0,0" Text="&lt;--&gt;" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" PointerPressed="TextBlock_PointerPressed"/>
+        <TextBlock HorizontalAlignment="Left" Margin="173,336,0,0" Text="Ввод суммы" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FocusVisualSecondaryBrush="{x:Null}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="173,122,0,0" Text="Выбор валют" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
 
     </Grid>
 </Page>
